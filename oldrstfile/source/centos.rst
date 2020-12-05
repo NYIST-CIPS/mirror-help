@@ -5,7 +5,7 @@ CentOS 源使用帮助
 地址
 ====
 
-https://mirrors.ustc.edu.cn/centos/
+https://mirror.nyist.edu.cn/centos/
 
 说明
 ====
@@ -33,7 +33,7 @@ x86_64, i386
 ::
 
   sudo sed -e 's|^mirrorlist=|#mirrorlist=|g' \
-           -e 's|^#baseurl=http://mirror.centos.org/$contentdir|baseurl=https://mirrors.ustc.edu.cn/centos|g' \
+           -e 's|^#baseurl=https://mirror.centos.org/$contentdir|baseurl=https://mirror.nyist.edu.cn/centos|g' \
            -i.bak \
            /etc/yum.repos.d/CentOS-Base.repo \
            /etc/yum.repos.d/CentOS-Extras.repo \
@@ -44,7 +44,7 @@ x86_64, i386
 ::
 
   sudo sed -e 's|^mirrorlist=|#mirrorlist=|g' \
-           -e 's|^#baseurl=http://mirror.centos.org/centos|baseurl=https://mirrors.ustc.edu.cn/centos|g' \
+           -e 's|^#baseurl=https://mirror.centos.org/centos|baseurl=https://mirror.nyist.edu.cn/centos|g' \
            -i.bak \
            /etc/yum.repos.d/CentOS-Base.repo
 

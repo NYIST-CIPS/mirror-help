@@ -5,7 +5,7 @@ Nodesource 源使用帮助
 地址
 ====
 
-https://mirrors.ustc.edu.cn/nodesource/
+https://mirror.nyist.edu.cn/nodesource/
 
 说明
 ====
@@ -25,8 +25,8 @@ Debian 及衍生发行版使用说明
 
 ::
 
-   deb https://mirrors.ustc.edu.cn/nodesource/deb/node_6.x stretch main
-   deb-src https://mirrors.ustc.edu.cn/nodesource/deb/node_6.x stretch main
+   deb https://mirror.nyist.edu.cn/nodesource/deb/node_6.x stretch main
+   deb-src https://mirror.nyist.edu.cn/nodesource/deb/node_6.x stretch main
 
 将其中的 ``6.x`` 修改为自己所需的大版本号即可，如 8.x、10.x。
 
@@ -42,7 +42,7 @@ RHEL 及衍生发行版使用说明
 此处需将 ``6.x`` 手动修改为所需大版本号。
 
 修改 ``/etc/yum.repos.d/nodesource-*.repo`` 文件，将其中的所有
-``rpm.nodesource.com`` 替换为 ``mirrors.ustc.edu.cn/nodesource/rpm``
+``rpm.nodesource.com`` 替换为 ``mirror.nyist.edu.cn/nodesource/rpm``
 即可。
 
 相关链接

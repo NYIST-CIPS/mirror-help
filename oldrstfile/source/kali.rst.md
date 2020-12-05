@@ -5,7 +5,7 @@ title: Kali Linux 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/kali/>
+<https://mirror.nyist.edu.cn/kali/>
 
 说明
 ====
@@ -23,8 +23,8 @@ amd64, armel, armhf, i386
 编辑 `/etc/apt/sources.list`{.interpreted-text role="file"} 文件,
 在文件最前面添加以下条目：
 
-    deb https://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
-    deb-src https://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+    deb https://mirror.nyist.edu.cn/kali kali-rolling main non-free contrib
+    deb-src https://mirror.nyist.edu.cn/kali kali-rolling main non-free contrib
 
 更改完 `sources.list`{.interpreted-text role="file"} 文件后请运行
 `sudo apt-get update` 更新索引以生效。
@@ -38,7 +38,7 @@ Kali Linux 主页
 
 论坛
 
-:   <http://forums.kali.org/>
+:   <https://forums.kali.org/>
 
 文档
 

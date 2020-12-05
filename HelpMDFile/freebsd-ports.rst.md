@@ -5,7 +5,7 @@ title: FreeBSD ports 源使用帮助
 地址
 ====
 
-<http://mirrors.ustc.edu.cn/freebsd-ports/>
+<https://mirror.nyist.edu.cn/freebsd-ports/>
 
 说明
 ====
@@ -18,7 +18,7 @@ FreeBSD ports 软件源
 在 `/etc/make.conf`{.interpreted-text role="file"}
 中添加以下内容（如果文件不存在，则新建之）：
 
-    MASTER_SITE_OVERRIDE?=http://mirrors.ustc.edu.cn/freebsd-ports/distfiles/${DIST_SUBDIR}/
+    MASTER_SITE_OVERRIDE?=https://mirror.nyist.edu.cn/freebsd-ports/distfiles/${DIST_SUBDIR}/
 
 相关链接
 ========

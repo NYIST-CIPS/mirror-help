@@ -5,7 +5,7 @@ title: Ubuntu Releases 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/ubuntu-releases/>
+<https://mirror.nyist.edu.cn/ubuntu-releases/>
 
 说明
 ====
@@ -32,8 +32,8 @@ AMD64 (x86\_64), Intel x86
 ========
 
 Ubuntu 当前支持的版本的 ISO 镜像，下载请直接前往
-<https://mirrors.ustc.edu.cn/ubuntu-releases/>
+<https://mirror.nyist.edu.cn/ubuntu-releases/>
 
-另外 <https://mirrors.ustc.edu.cn/ubuntu-releases/ubuntu-core/> 中包含了
+另外 <https://mirror.nyist.edu.cn/ubuntu-releases/ubuntu-core/> 中包含了
 Ubuntu Core 16 的 ISO，支持 AMD64, Intel x86, Raspberry Pi 2/3,
 DragonBoard 410c 等。

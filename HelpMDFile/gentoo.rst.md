@@ -5,7 +5,7 @@ title: Gentoo 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/gentoo/>
+<https://mirror.nyist.edu.cn/gentoo/>
 
 说明
 ====
@@ -23,7 +23,7 @@ ALL
 在 `/etc/portage/make.conf`{.interpreted-text role="file"}
 中添加或修改：
 
-    GENTOO_MIRRORS="https://mirrors.ustc.edu.cn/gentoo/"
+    GENTOO_MIRRORS="https://mirror.nyist.edu.cn/gentoo/"
 
 相关链接
 ========

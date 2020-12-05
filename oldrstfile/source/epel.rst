@@ -5,7 +5,7 @@ EPEL 源使用帮助
 地址
 ====
 
-https://mirrors.ustc.edu.cn/epel/
+https://mirror.nyist.edu.cn/epel/
 
 说明
 ====
@@ -33,7 +33,7 @@ Red Hat Enterprise Linux (RHEL), CentOS, Scientific Linux (SL), Oracle Linux (OL
 
   sudo yum install -y epel-release
   sudo sed -e 's|^metalink=|#metalink=|g' \
-           -e 's|^#baseurl=https\?://download.fedoraproject.org/pub/epel/|baseurl=https://mirrors.ustc.edu.cn/epel/|g' \
+           -e 's|^#baseurl=https\?://download.fedoraproject.org/pub/epel/|baseurl=https://mirror.nyist.edu.cn/epel/|g' \
            -i.bak \
            /etc/yum.repos.d/epel.repo
 

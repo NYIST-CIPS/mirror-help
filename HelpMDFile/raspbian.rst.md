@@ -5,7 +5,7 @@ title: Raspbian 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/raspbian/>
+<https://mirror.nyist.edu.cn/raspbian/>
 
 说明
 ====
@@ -37,24 +37,24 @@ Warning
 :::
 
 将 `/etc/apt/sources.list`{.interpreted-text role="file"}
-文件中默认的源地址 `http://raspbian.raspberrypi.org/` 替换为
-`http://mirrors.ustc.edu.cn/raspbian/` 即可。
+文件中默认的源地址 `https://raspbian.raspberrypi.org/` 替换为
+`https://mirror.nyist.edu.cn/raspbian/` 即可。
 
 raspbian 2018-04-19 之后的镜像默认源已经更改，用如下命令替换：
 
-    sudo sed -i 's|raspbian.raspberrypi.org|mirrors.ustc.edu.cn/raspbian|g' /etc/apt/sources.list
+    sudo sed -i 's|raspbian.raspberrypi.org|mirror.nyist.edu.cn/raspbian|g' /etc/apt/sources.list
 
 旧版的系统可以用以下命令替换：
 
-    sudo sed -i 's|mirrordirector.raspbian.org|mirrors.ustc.edu.cn/raspbian|g' /etc/apt/sources.list
-    sudo sed -i 's|archive.raspbian.org|mirrors.ustc.edu.cn/raspbian|g' /etc/apt/sources.list
+    sudo sed -i 's|mirrordirector.raspbian.org|mirror.nyist.edu.cn/raspbian|g' /etc/apt/sources.list
+    sudo sed -i 's|archive.raspbian.org|mirror.nyist.edu.cn/raspbian|g' /etc/apt/sources.list
 
 当然也可以直接编辑 `/etc/apt/sources.list`{.interpreted-text
 role="file"} 文件（需要使用
 sudo）。删除原文件所有内容，用以下内容取代（以 Buster 示例）：
 
-    deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
-    #deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
+    deb https://mirror.nyist.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
+    #deb-src https://mirror.nyist.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
 
 编辑此文件后，请使用 `sudo apt-get update` 命令，更新软件索引。
 
@@ -70,19 +70,19 @@ Raspbian 链接
 
     Raspbian 主页
 
-    :   <http://www.raspbian.org/>
+    :   <https://www.raspbian.org/>
 
     文档
 
-    :   <http://www.raspbian.org/RaspbianDocumentation>
+    :   <https://www.raspbian.org/RaspbianDocumentation>
 
     Bug Tracker
 
-    :   <http://www.raspbian.org/RaspbianBugs>
+    :   <https://www.raspbian.org/RaspbianBugs>
 
     镜像列表
 
-    :   <http://www.raspbian.org/RaspbianMirrors>
+    :   <https://www.raspbian.org/RaspbianMirrors>
 
 树莓派链接
 

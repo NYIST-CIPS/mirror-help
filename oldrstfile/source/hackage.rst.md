@@ -5,7 +5,7 @@ title: Hackage 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/hackage/>
+<https://mirror.nyist.edu.cn/hackage/>
 
 说明
 ====
@@ -20,7 +20,7 @@ stack使用说明
 \>=v1.11:
 
     package-indices:
-    - download-prefix: https://mirrors.ustc.edu.cn/hackage/package/
+    - download-prefix: https://mirror.nyist.edu.cn/hackage/package/
       hackage-security:
         keyids:
         - 0a5c7ea47cd1b15f01f5f51a33adda7e655bc0f0b0615baa8e271f4c3351e21d
@@ -41,8 +41,8 @@ stack使用说明
 
     package-indices:
       - name: USTC
-        download-prefix: https://mirrors.ustc.edu.cn/hackage/package/
-        http: https://mirrors.ustc.edu.cn/hackage/01-index.tar.gz
+        download-prefix: https://mirror.nyist.edu.cn/hackage/package/
+        http: https://mirror.nyist.edu.cn/hackage/01-index.tar.gz
 
 cabal使用说明
 =============
@@ -56,16 +56,16 @@ Cabal ≥ 1.24 (GHC 8.0)
 找到官方仓库: :
 
     repository hackage.haskell.org
-      url: http://hackage.haskell.org/
+      url: https://hackage.haskell.org/
       -- secure: True
       -- root-keys:
       -- keys-threshold: 3
 
 改为科大源: :
 
-    repository mirrors.ustc.edu.cn
+    repository mirror.nyist.edu.cn
 
->     url: <https://mirrors.ustc.edu.cn/hackage/>
+>     url: <https://mirror.nyist.edu.cn/hackage/>
 >
 > :   secure: False
 >
@@ -74,11 +74,11 @@ Cabal \< 1.24
 
 找到官方仓库: :
 
-       remote-repo: hackage.haskell.org:http://hackage.haskell.org/packages/archive
+       remote-repo: hackage.haskell.org:https://hackage.haskell.org/packages/archive
 
 改为科大源: :
 
-    remote-repo: mirrors.ustc.edu.cn:http://mirrors.ustc.edu.cn/hackage/
+    remote-repo: mirror.nyist.edu.cn:https://mirror.nyist.edu.cn/hackage/
 
 3.  执行 `cabal update`
 

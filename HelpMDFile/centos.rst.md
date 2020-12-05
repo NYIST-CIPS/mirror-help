@@ -5,7 +5,7 @@ title: CentOS 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/centos/>
+<https://mirror.nyist.edu.cn/centos/>
 
 说明
 ====
@@ -36,7 +36,7 @@ Warning
 对于 CentOS 8，使用以下命令替换默认的配置
 
     sudo sed -e 's|^mirrorlist=|#mirrorlist=|g' \
-             -e 's|^#baseurl=http://mirror.centos.org/$contentdir|baseurl=https://mirrors.ustc.edu.cn/centos|g' \
+             -e 's|^#baseurl=https://mirror.centos.org/$contentdir|baseurl=https://mirror.nyist.edu.cn/centos|g' \
              -i.bak \
              /etc/yum.repos.d/CentOS-Base.repo \
              /etc/yum.repos.d/CentOS-Extras.repo \
@@ -45,7 +45,7 @@ Warning
 对于 CentOS 6、7，使用以下命令替换默认配置
 
     sudo sed -e 's|^mirrorlist=|#mirrorlist=|g' \
-             -e 's|^#baseurl=http://mirror.centos.org/centos|baseurl=https://mirrors.ustc.edu.cn/centos|g' \
+             -e 's|^#baseurl=https://mirror.centos.org/centos|baseurl=https://mirror.nyist.edu.cn/centos|g' \
              -i.bak \
              /etc/yum.repos.d/CentOS-Base.repo
 

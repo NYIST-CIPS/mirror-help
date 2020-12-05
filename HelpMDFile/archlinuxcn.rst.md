@@ -5,7 +5,7 @@ title: Arch Linux CN 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/archlinuxcn/>
+<https://mirror.nyist.edu.cn/archlinuxcn/>
 
 说明
 ====
@@ -18,7 +18,7 @@ Arch Linux CN 软件源
 Arch Linux 中文社区仓库是由 Arch Linux
 中文社区驱动的非官方用户仓库。包含中文用户常用软件、工具、字体/美化包等。
 
-仓库地址：http://repo.archlinuxcn.org
+仓库地址：https://repo.archlinuxcn.org
 
 使用说明
 ========
@@ -26,7 +26,7 @@ Arch Linux 中文社区仓库是由 Arch Linux
 在 `/etc/pacman.conf`{.interpreted-text role="file"} 文件末尾添加两行：
 
     [archlinuxcn]
-    Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
+    Server = https://mirror.nyist.edu.cn/archlinuxcn/$arch
 
 然后请安装 `archlinuxcn-keyring` 包以导入 GPG key。
 

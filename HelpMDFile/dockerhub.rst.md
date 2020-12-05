@@ -5,7 +5,7 @@ title: Docker Hub 源使用帮助
 地址
 ====
 
-<https://docker.mirrors.ustc.edu.cn/>
+<https://docker.mirror.nyist.edu.cn/>
 
 说明
 ====
@@ -53,7 +53,7 @@ Linux
 对于使用 upstart 的系统（Ubuntu 14.04、Debian 7 Wheezy），在配置文件
 `/etc/default/docker` 中的 `DOCKER_OPTS` 中配置Hub地址：
 
-    DOCKER_OPTS="--registry-mirror=https://docker.mirrors.ustc.edu.cn/"
+    DOCKER_OPTS="--registry-mirror=https://docker.mirror.nyist.edu.cn/"
 
 重新启动服务:
 
@@ -63,7 +63,7 @@ Linux
 在配置文件 `/etc/docker/daemon.json` 中加入：
 
     {
-      "registry-mirrors": ["https://docker.mirrors.ustc.edu.cn/"]
+      "registry-mirrors": ["https://docker.mirror.nyist.edu.cn/"]
     }
 
 重新启动 dockerd：
@@ -78,7 +78,7 @@ macOS
 1.  打开 \"Docker.app\"
 2.  进入偏好设置页面(快捷键 `⌘,` )
 3.  打开 \"Daemon\" 选项卡
-4.  在 \"Registry mirrors\" 中添加 `https://docker.mirrors.ustc.edu.cn/`
+4.  在 \"Registry mirrors\" 中添加 `https://docker.mirror.nyist.edu.cn/`
 5.  点击下方的 \"Apply & Restart\" 按钮
 
 新版本：
@@ -96,7 +96,7 @@ Windows
 
 在系统右下角托盘 Docker 图标内右键菜单选择 `Settings`
 ，打开配置窗口后左侧导航菜单选择 `Daemon` 。在 `Registry mirrors`
-一栏中填写地址 `https://docker.mirrors.ustc.edu.cn/` ，之后点击 Apply
+一栏中填写地址 `https://docker.mirror.nyist.edu.cn/` ，之后点击 Apply
 保存后 Docker 就会重启并应用配置的镜像地址了。
 
 新版本：
@@ -112,7 +112,7 @@ systemd 系统\" 的配置，在 JSON 配置中添加 `"registry-mirrors"` 一�
 在命令行执行 `docker info` ，如果从结果中看到了如下内容，说明配置成功。
 
     Registry Mirrors:
-        https://docker.mirrors.ustc.edu.cn/
+        https://docker.mirror.nyist.edu.cn/
 
 如何搭建本地镜像缓存？
 ----------------------
@@ -168,7 +168,7 @@ Redis 容器：
     notifications:
         endpoints:
             - name: local-5003
-              url: http://localhost:5003/callback
+              url: https://localhost:5003/callback
               headers:
                   Authorization: [Bearer <an example token>]
               timeout: 1s
@@ -176,7 +176,7 @@ Redis 容器：
               backoff: 1s
               disabled: true
             - name: local-8083
-              url: http://localhost:8083/callback
+              url: https://localhost:8083/callback
               timeout: 1s
               threshold: 10
               backoff: 1s

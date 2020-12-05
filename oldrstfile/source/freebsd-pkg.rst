@@ -5,7 +5,7 @@ FreeBSD pkg 源使用帮助
 地址
 ====
 
-https://mirrors.ustc.edu.cn/freebsd-pkg/
+https://mirror.nyist.edu.cn/freebsd-pkg/
 
 说明
 ====
@@ -34,7 +34,7 @@ FreeBSD pkg 包管理器的官方源配置是 :file:`/etc/pkg/FreeBSD.conf` ，�
 ::
 
   FreeBSD: {
-    url: "pkg+http://mirrors.ustc.edu.cn/freebsd-pkg/${ABI}/quarterly",
+    url: "pkg+https://mirror.nyist.edu.cn/freebsd-pkg/${ABI}/quarterly",
   }
 
 如果要使用滚动更新的 latest 仓库，把 ``url`` 配置最后的 ``quarterly`` 换成 ``latest`` 即可。

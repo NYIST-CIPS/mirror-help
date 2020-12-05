@@ -5,7 +5,7 @@ title: Arch Linux 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/archlinux/>
+<https://mirror.nyist.edu.cn/archlinux/>
 
 说明
 ====
@@ -23,7 +23,7 @@ i686, x86\_64
 编辑 `/etc/pacman.d/mirrorlist`{.interpreted-text role="file"}
 ，在文件的最顶端添加
 
-    Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
+    Server = https://mirror.nyist.edu.cn/archlinux/$repo/os/$arch
 
 国内用户，推荐另外使用 Arch Linux CN 的源，请参考
 `archlinuxcn`{.interpreted-text role="doc"}

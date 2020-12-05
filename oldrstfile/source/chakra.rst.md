@@ -5,7 +5,7 @@ title: Chakra 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/chakra/>
+<https://mirror.nyist.edu.cn/chakra/>
 
 说明
 ====
@@ -23,7 +23,7 @@ x86\_64
 编辑 `/etc/pacman.d/mirrorlist`{.interpreted-text role="file"}
 ，先注释掉里面的所有行，然后在文件的最顶端添加
 
-    Server = https://mirrors.ustc.edu.cn/chakra/$repo/$arch
+    Server = https://mirror.nyist.edu.cn/chakra/$repo/$arch
 
 相关链接
 ========

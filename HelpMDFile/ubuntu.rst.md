@@ -5,7 +5,7 @@ title: Ubuntu 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/ubuntu/>
+<https://mirror.nyist.edu.cn/ubuntu/>
 
 说明
 ====
@@ -35,7 +35,7 @@ AMD64 (x86\_64), Intel x86
 ------------------------
 
 依次打开：系统设置，软件和更新。在 `下载自` 中选择 `其他站点`
-，然后在中国的条目 下选择 `mirrors.ustc.edu.cn` 。
+，然后在中国的条目 下选择 `mirror.nyist.edu.cn` 。
 
 下面是 Ubuntu 16.04 的操作示意图：
 
@@ -53,12 +53,12 @@ Warning
 :::
 
 一般情况下，将 `/etc/apt/sources.list`{.interpreted-text role="file"}
-文件中 Ubuntu 默认的源地址 `http://archive.ubuntu.com/` 替换为
-`http://mirrors.ustc.edu.cn` 即可。
+文件中 Ubuntu 默认的源地址 `https://archive.ubuntu.com/` 替换为
+`https://mirror.nyist.edu.cn` 即可。
 
 可以使用如下命令：
 
-    sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+    sudo sed -i 's/archive.ubuntu.com/mirror.nyist.edu.cn/g' /etc/apt/sources.list
 
 ::: {.tip}
 ::: {.admonition-title}
@@ -66,11 +66,11 @@ Tip
 :::
 
 Ubuntu 图形安装器会根据用户设定的时区推断
-locale，这导致默认的源地址通常不是 `http://archive.ubuntu.com/` ， 而是
-`http://<country-code>.archive.ubuntu.com/ubuntu/` ，如
-`http://cn.archive.ubuntu.com/ubuntu/` ，
+locale，这导致默认的源地址通常不是 `https://archive.ubuntu.com/` ， 而是
+`https://<country-code>.archive.ubuntu.com/ubuntu/` ，如
+`https://cn.archive.ubuntu.com/ubuntu/` ，
 此时只需将上面的命令进行相应的替换即可，即
-`sudo sed -i 's/cn.archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list`
+`sudo sed -i 's/cn.archive.ubuntu.com/mirror.nyist.edu.cn/g' /etc/apt/sources.list`
 。
 :::
 
@@ -78,18 +78,18 @@ locale，这导致默认的源地址通常不是 `http://archive.ubuntu.com/` �
 role="file"} 文件（需要使用 sudo）。以下是 Ubuntu 16.04 参考配置内容：
 
     # 默认注释了源码仓库，如有需要可自行取消注释
-    deb https://mirrors.ustc.edu.cn/ubuntu/ xenial main restricted universe multiverse
-    # deb-src https://mirrors.ustc.edu.cn/ubuntu/ xenial main restricted universe multiverse
-    deb https://mirrors.ustc.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
-    # deb-src https://mirrors.ustc.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
-    deb https://mirrors.ustc.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
-    # deb-src https://mirrors.ustc.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
-    deb https://mirrors.ustc.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
-    # deb-src https://mirrors.ustc.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
+    deb https://mirror.nyist.edu.cn/ubuntu/ xenial main restricted universe multiverse
+    # deb-src https://mirror.nyist.edu.cn/ubuntu/ xenial main restricted universe multiverse
+    deb https://mirror.nyist.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
+    # deb-src https://mirror.nyist.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
+    deb https://mirror.nyist.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
+    # deb-src https://mirror.nyist.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
+    deb https://mirror.nyist.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
+    # deb-src https://mirror.nyist.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
 
     # 预发布软件源，不建议启用
-    # deb https://mirrors.ustc.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse
-    # deb-src https://mirrors.ustc.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse
+    # deb https://mirror.nyist.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse
+    # deb-src https://mirror.nyist.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse
 
 更改完 `sources.list`{.interpreted-text role="file"} 文件后请运行
 `sudo apt-get update` 更新索引以生效。
@@ -112,7 +112,7 @@ Tip
 :::
 
 另外，也可以使用 snullp 大叔开发的
-[配置生成器](https://mirrors.ustc.edu.cn/repogen) 。
+[配置生成器](https://mirror.nyist.edu.cn/repogen) 。
 
 镜像下载
 --------

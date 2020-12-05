@@ -5,7 +5,7 @@ title: Trisquel 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/trisquel/>
+<https://mirror.nyist.edu.cn/trisquel/>
 
 说明
 ====
@@ -39,14 +39,14 @@ Trisquel 使用 APT 软件包管理系统，故其软件源使用方法与 Ubunt
 以 Flidas 为例, 编辑 `/etc/apt/sources.list`{.interpreted-text
 role="file"} 文件 (需要使用 sudo), 在文件最前面添加以下条目:
 
-    deb https://mirrors.ustc.edu.cn/trisquel/ flidas main
-    deb-src https://mirrors.ustc.edu.cn/trisquel/ flidas main
-    deb https://mirrors.ustc.edu.cn/trisquel/ flidas-security main
-    deb-src https://mirrors.ustc.edu.cn/trisquel/ flidas-security main
-    deb https://mirrors.ustc.edu.cn/trisquel/ flidas-updates main
-    deb-src https://mirrors.ustc.edu.cn/trisquel/ flidas-updates main
-    deb https://mirrors.ustc.edu.cn/trisquel/ flidas-backports main
-    deb-src https://mirrors.ustc.edu.cn/trisquel/ flidas-backports main
+    deb https://mirror.nyist.edu.cn/trisquel/ flidas main
+    deb-src https://mirror.nyist.edu.cn/trisquel/ flidas main
+    deb https://mirror.nyist.edu.cn/trisquel/ flidas-security main
+    deb-src https://mirror.nyist.edu.cn/trisquel/ flidas-security main
+    deb https://mirror.nyist.edu.cn/trisquel/ flidas-updates main
+    deb-src https://mirror.nyist.edu.cn/trisquel/ flidas-updates main
+    deb https://mirror.nyist.edu.cn/trisquel/ flidas-backports main
+    deb-src https://mirror.nyist.edu.cn/trisquel/ flidas-backports main
 
 相关链接
 ========

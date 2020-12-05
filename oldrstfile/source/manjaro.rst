@@ -5,7 +5,7 @@ Manjaro Linux 源使用帮助
 地址
 ====
 
-https://mirrors.ustc.edu.cn/manjaro/
+https://mirror.nyist.edu.cn/manjaro/
 
 说明
 ====
@@ -31,7 +31,7 @@ i686, x86_64
 
   sudo pacman-mirrors -i -c China -m rank
         
-勾选 ``http://mirrors.ustc.edu.cn/manjaro/`` ，然后按 ``OK`` 键两次。
+勾选 ``https://mirror.nyist.edu.cn/manjaro/`` ，然后按 ``OK`` 键两次。
         
 最后刷新缓存：
 

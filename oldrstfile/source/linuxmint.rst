@@ -5,7 +5,7 @@ Linux Mint 源使用帮助
 地址
 ====
 
-https://mirrors.ustc.edu.cn/linuxmint/
+https://mirror.nyist.edu.cn/linuxmint/
 
 说明
 ====
@@ -35,23 +35,23 @@ i386，amd64
 
 ::
 
-	deb https://mirrors.ustc.edu.cn/linuxmint/ tara main upstream import backport 
-	deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
-	deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
-	deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
-	deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
-	deb http://archive.canonical.com/ubuntu/ bionic partner
+	deb https://mirror.nyist.edu.cn/linuxmint/ tara main upstream import backport 
+	deb https://mirror.nyist.edu.cn/ubuntu/ bionic main restricted universe multiverse
+	deb https://mirror.nyist.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+	deb https://mirror.nyist.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+	deb https://mirror.nyist.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+	deb https://archive.canonical.com/ubuntu/ bionic partner
 	
 * 对于基于 Debian 的 LMDE，以 LMDE 2 为例：
 
 ::
 
-	deb https://mirrors.ustc.edu.cn/linuxmint/ betsy main upstream import
-	deb https://mirrors.ustc.edu.cn/debian jessie main contrib non-free
-	deb https://mirrors.ustc.edu.cn/debian jessie-updates main contrib non-free
-	deb https://mirrors.ustc.edu.cn/debian jessie-backports main contrib non-free
-	deb https://mirrors.ustc.edu.cn/debian-security/ jessie/updates main non-free contrib
-	deb https://mirrors.ustc.edu.cn/deb-multimedia/ jessie main non-free
+	deb https://mirror.nyist.edu.cn/linuxmint/ betsy main upstream import
+	deb https://mirror.nyist.edu.cn/debian jessie main contrib non-free
+	deb https://mirror.nyist.edu.cn/debian jessie-updates main contrib non-free
+	deb https://mirror.nyist.edu.cn/debian jessie-backports main contrib non-free
+	deb https://mirror.nyist.edu.cn/debian-security/ jessie/updates main non-free contrib
+	deb https://mirror.nyist.edu.cn/deb-multimedia/ jessie main non-free
 
  
 然后运行 ``sudo apt-get update`` 更新索引以生效。 

@@ -1,0 +1,70 @@
+{
+    "title": "南阳理工学院开源镜像站帮助文档",
+    "author": "NYISTOSUG",
+    "description": "南阳理工学院开源镜像站帮助文档",
+    "language": "zh-hans",
+    "styles": {
+    },
+    "structure": {
+        "readme": "README.gb.md"
+    },
+    "links": {
+        "sidebar": {
+            "NYISTOSUG": "https://osug.nyist.edu.cn"
+        }
+    },
+    "plugins": [
+        "-sharing",
+        "splitter",
+        "expandable-chapters-small",
+        "anchors",
+
+        "github",
+        "github-buttons",
+        "donate",
+        "sharing-plus",
+        "anchor-navigation-ex",
+        "favicon"
+    ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/DefiedParty"
+        },
+        "github-buttons": {
+            "buttons": [{
+                "user": "DefiedParty",
+                "repo": "NYIST-Mirror-Help-GitBook",
+                "type": "star",
+                "size": "small",
+                "count": true
+                }
+            ]
+        },
+        "sharing": {
+            "douban": false,
+            "facebook": false,
+            "google": false,
+            "hatenaBookmark": false,
+            "instapaper": false,
+            "line": false,
+            "linkedin": false,
+            "messenger": false,
+            "pocket": false,
+            "qq": false,
+            "qzone": false,
+            "stumbleupon": false,
+            "twitter": false,
+            "viber": false,
+            "vk": false,
+            "weibo": false,
+            "whatsapp": false,
+            "all": [
+                "google", "facebook", "weibo", "twitter",
+                "qq", "qzone", "linkedin", "pocket"
+            ]
+        },
+        "anchor-navigation-ex": {
+            "showLevel": false
+        }
+    }
+}

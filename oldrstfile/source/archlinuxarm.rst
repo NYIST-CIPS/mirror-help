@@ -5,7 +5,7 @@ Arch Linux ARM 源使用帮助
 地址
 ====
 
-https://mirrors.ustc.edu.cn/archlinuxarm/
+https://mirror.nyist.edu.cn/archlinuxarm/
 
 说明
 ====
@@ -24,7 +24,7 @@ ARMv5, ARMv6, ARMv7, AArch64
 
 ::
 
-    Server = https://mirrors.ustc.edu.cn/archlinuxarm/$arch/$repo
+    Server = https://mirror.nyist.edu.cn/archlinuxarm/$arch/$repo
 
 相关链接
 ========

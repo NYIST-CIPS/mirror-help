@@ -5,7 +5,7 @@ title: Emacs ELPA 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/elpa/>
+<https://mirror.nyist.edu.cn/elpa/>
 
 说明
 ====
@@ -21,10 +21,10 @@ Emacs ELPA 源。包括以下 ELPA 仓库：
 
 在 Emacs 配置文件中（任何用到 `package` 特性的代码之前）添加如下内容：
 
-    (setq package-archives '(("gnu" . "http://mirrors.ustc.edu.cn/elpa/gnu/")
-                             ("melpa" . "http://mirrors.ustc.edu.cn/elpa/melpa/")
-                             ("melpa-stable" . "http://mirrors.ustc.edu.cn/elpa/melpa-stable/")
-                             ("org" . "http://mirrors.ustc.edu.cn/elpa/org/")))
+    (setq package-archives '(("gnu" . "https://mirror.nyist.edu.cn/elpa/gnu/")
+                             ("melpa" . "https://mirror.nyist.edu.cn/elpa/melpa/")
+                             ("melpa-stable" . "https://mirror.nyist.edu.cn/elpa/melpa-stable/")
+                             ("org" . "https://mirror.nyist.edu.cn/elpa/org/")))
 
 或使用 Customize 功能修改 `Package Archives` 选项为上述内容。
 
@@ -34,9 +34,9 @@ Spacemacs 使用说明
 添加下面的代码到 `.spacemacs` 的 `dotspacemacs/user-init` 中：
 
     (setq configuration-layer--elpa-archives
-          '(("melpa-cn" . "http://mirrors.ustc.edu.cn/elpa/melpa/")
-            ("org-cn"   . "http://mirrors.ustc.edu.cn/elpa/org/")
-            ("gnu-cn"   . "http://mirrors.ustc.edu.cn/elpa/gnu/")))
+          '(("melpa-cn" . "https://mirror.nyist.edu.cn/elpa/melpa/")
+            ("org-cn"   . "https://mirror.nyist.edu.cn/elpa/org/")
+            ("gnu-cn"   . "https://mirror.nyist.edu.cn/elpa/gnu/")))
 
 develop 分支应使用 `configuration-layer-elpa-archives` 代替上面代码中的
 `configuration-layer--elpa-archives` （ `--` 换成 `-` ）。

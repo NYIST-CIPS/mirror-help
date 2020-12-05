@@ -5,7 +5,7 @@ FreeBSD 源使用帮助
 地址
 ====
 
-https://mirrors.ustc.edu.cn/freebsd/
+https://mirror.nyist.edu.cn/freebsd/
 
 说明
 ====
@@ -25,9 +25,9 @@ FreeBSD 支持的所有正式版本
 使用说明
 ========
 
-- ISO 镜像位于 `/releases/ISO-IMAGES <http://mirrors.ustc.edu.cn/freebsd/releases/ISO-IMAGES>`_
-- 虚拟机模板位于 `/releases/VM-IMAGES <http://mirrors.ustc.edu.cn/freebsd/releases/VM-IMAGES>`_
-- 文档及资料位于 `/doc <http://mirrors.ustc.edu.cn/freebsd/doc>`_
+- ISO 镜像位于 `/releases/ISO-IMAGES <https://mirror.nyist.edu.cn/freebsd/releases/ISO-IMAGES>`_
+- 虚拟机模板位于 `/releases/VM-IMAGES <https://mirror.nyist.edu.cn/freebsd/releases/VM-IMAGES>`_
+- 文档及资料位于 `/doc <https://mirror.nyist.edu.cn/freebsd/doc>`_
 
 .. warning::
     pkg 和 ports 仓库已被官方移动到独立的仓库中。详见 `相关镜像`_ 。

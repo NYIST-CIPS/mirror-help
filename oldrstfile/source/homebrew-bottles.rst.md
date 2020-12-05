@@ -5,7 +5,7 @@ title: Homebrew Bottles 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/homebrew-bottles/>
+<https://mirror.nyist.edu.cn/homebrew-bottles/>
 
 说明
 ====
@@ -27,16 +27,16 @@ Homebrew 预编译二进制软件包
 ========
 
 请在运行 brew 前设置环境变量 `HOMEBREW_BOTTLE_DOMAIN` ，值为
-`https://mirrors.ustc.edu.cn/homebrew-bottles` 。
+`https://mirror.nyist.edu.cn/homebrew-bottles` 。
 
 对于 bash 用户：
 
-    echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' >> ~/.bash_profile
+    echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirror.nyist.edu.cn/homebrew-bottles' >> ~/.bash_profile
     source ~/.bash_profile
 
 对于 zsh 用户：
 
-    echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' >> ~/.zshrc
+    echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirror.nyist.edu.cn/homebrew-bottles' >> ~/.zshrc
     source ~/.zshrc
 
 相关镜像
@@ -50,8 +50,8 @@ Homebrew 预编译二进制软件包
 
 官方主页
 
-:   <http://brew.sh/>
+:   <https://brew.sh/>
 
 Bottles 介绍
 
-:   <http://docs.brew.sh/Bottles.html>
+:   <https://docs.brew.sh/Bottles.html>

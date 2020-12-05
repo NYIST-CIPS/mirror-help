@@ -5,7 +5,7 @@ title: Ubuntu Cloud Images 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/ubuntu-cloud-images/>
+<https://mirror.nyist.edu.cn/ubuntu-cloud-images/>
 
 说明
 ====

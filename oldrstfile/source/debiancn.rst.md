@@ -5,7 +5,7 @@ title: Debiancn 源使用帮助
 地址
 ====
 
--   <https://mirrors.ustc.edu.cn/debiancn/>
+-   <https://mirror.nyist.edu.cn/debiancn/>
 
 说明
 ====
@@ -41,7 +41,7 @@ Tip
 :::
 
 请参考: [上游使用说明](https://github.com/debiancn/repo) 并将所有
-`repo.debiancn.org` 字符串替换为 `mirrors.ustc.edu.cn` 即可。
+`repo.debiancn.org` 字符串替换为 `mirror.nyist.edu.cn` 即可。
 :::
 
 相关链接

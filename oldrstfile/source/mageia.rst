@@ -5,7 +5,7 @@ Mageia 源使用帮助
 地址
 ========
 
-https://mirrors.ustc.edu.cn/mageia/
+https://mirror.nyist.edu.cn/mageia/
 
 说明
 ========
@@ -42,7 +42,7 @@ urpmi 配置方法
 ::
 
     su
-    urpmi.addmedia --distrib https://mirrors.ustc.edu.cn/mageia/distrib/6/x86_64
+    urpmi.addmedia --distrib https://mirror.nyist.edu.cn/mageia/distrib/6/x86_64
 
 刷新缓存：
 
@@ -73,7 +73,7 @@ dnf 在默认情况下已经被预装，如果你发现并没有，可以使用 
 
 ::
 
-    baseurl=https://mirrors.ustc.edu.cn/mageia/
+    baseurl=https://mirror.nyist.edu.cn/mageia/
     
 .. tip::    
     为了让 dnf 能在中科大软件源出现问题时，自动切换至其它后备软件源，我们不建议你注释掉 mirrorlist 行。
@@ -102,7 +102,7 @@ dnf 在默认情况下已经被预装，如果你发现并没有，可以使用 
 
     [mageia-x86_64]
     name=Mageia $releasever - x86_64
-    baseurl=https://mirrors.ustc.edu.cn/mageia/distrib/$releasever/x86_64/media/core/release/
+    baseurl=https://mirror.nyist.edu.cn/mageia/distrib/$releasever/x86_64/media/core/release/
     #metalink=https://mirrors.mageia.org/metalink?distrib=mageia-$releasever&arch=x86_64&section=core&repo=release
     mirrorlist=https://www.mageia.org/mirrorlist/?release=$releasever&arch=x86_64&section=core&repo=release
     gpgcheck=1
@@ -112,7 +112,7 @@ dnf 在默认情况下已经被预装，如果你发现并没有，可以使用 
 
     [updates-x86_64]
     name=Mageia $releasever - x86_64 - Updates
-    baseurl=https://mirrors.ustc.edu.cn/mageia/distrib/$releasever/x86_64/media/core/updates/
+    baseurl=https://mirror.nyist.edu.cn/mageia/distrib/$releasever/x86_64/media/core/updates/
     #metalink=https://mirrors.mageia.org/metalink?distrib=mageia-$releasever&arch=x86_64&section=core&repo=updates
     mirrorlist=https://www.mageia.org/mirrorlist/?release=$releasever&arch=x86_64&section=core&repo=updates
     gpgcheck=1
@@ -122,7 +122,7 @@ dnf 在默认情况下已经被预装，如果你发现并没有，可以使用 
 
     [updates_testing-x86_64]
     name=Mageia $releasever - x86_64 - Test Updates
-    baseurl=https://mirrors.ustc.edu.cn/mageia/distrib/$releasever/x86_64/media/core/updates_testing/
+    baseurl=https://mirror.nyist.edu.cn/mageia/distrib/$releasever/x86_64/media/core/updates_testing/
     #metalink=https://mirrors.mageia.org/metalink?distrib=mageia-$releasever&arch=x86_64&section=core&repo=updates_testing
     mirrorlist=https://www.mageia.org/mirrorlist/?release=$releasever&arch=x86_64&section=core&repo=updates_testing
     gpgcheck=1
@@ -132,7 +132,7 @@ dnf 在默认情况下已经被预装，如果你发现并没有，可以使用 
 
     [backports-x86_64]
     name=Mageia $releasever - x86_64 - Backports
-    baseurl=https://mirrors.ustc.edu.cn/mageia/distrib/$releasever/x86_64/media/core/backports/
+    baseurl=https://mirror.nyist.edu.cn/mageia/distrib/$releasever/x86_64/media/core/backports/
     #metalink=https://mirrors.mageia.org/metalink?distrib=mageia-$releasever&arch=x86_64&section=core&repo=backports
     mirrorlist=https://www.mageia.org/mirrorlist/?release=$releasever&arch=x86_64&section=core&repo=backports
     gpgcheck=1
@@ -142,7 +142,7 @@ dnf 在默认情况下已经被预装，如果你发现并没有，可以使用 
 
     [backports_testing-x86_64]
     name=Mageia $releasever - x86_64 - Test Backports
-    baseurl=https://mirrors.ustc.edu.cn/mageia/distrib/$releasever/x86_64/media/core/backports_testing/
+    baseurl=https://mirror.nyist.edu.cn/mageia/distrib/$releasever/x86_64/media/core/backports_testing/
     #metalink=https://mirrors.mageia.org/metalink?distrib=mageia-$releasever&arch=x86_64&section=core&repo=backports_testing
     mirrorlist=https://www.mageia.org/mirrorlist/?release=$releasever&arch=x86_64&section=core&repo=backports_testing
     gpgcheck=1
@@ -152,7 +152,7 @@ dnf 在默认情况下已经被预装，如果你发现并没有，可以使用 
 
     [mageia-x86_64-debuginfo]
     name=Mageia $releasever - x86_64 - Debug
-    baseurl=https://mirrors.ustc.edu.cn/mageia/distrib/$releasever/x86_64/media/debug/core/release/
+    baseurl=https://mirror.nyist.edu.cn/mageia/distrib/$releasever/x86_64/media/debug/core/release/
     #metalink=https://mirrors.mageia.org/metalink?distrib=mageia-$releasever&arch=x86_64&section=core&repo=release&debug=true
     mirrorlist=https://www.mageia.org/mirrorlist/?release=$releasever&arch=x86_64&section=core&repo=release&debug=1
     gpgcheck=1
@@ -162,7 +162,7 @@ dnf 在默认情况下已经被预装，如果你发现并没有，可以使用 
 
     [updates-x86_64-debuginfo]
     name=Mageia $releasever - x86_64 - Updates - Debug
-    baseurl=https://mirrors.ustc.edu.cn/mageia/distrib/$releasever/x86_64/media/debug/core/updates/
+    baseurl=https://mirror.nyist.edu.cn/mageia/distrib/$releasever/x86_64/media/debug/core/updates/
     #metalink=https://mirrors.mageia.org/metalink?distrib=mageia-$releasever&arch=x86_64&section=core&repo=updates&debug=true
     mirrorlist=https://www.mageia.org/mirrorlist/?release=$releasever&arch=x86_64&section=core&repo=updates&debug=1
     gpgcheck=1
@@ -172,7 +172,7 @@ dnf 在默认情况下已经被预装，如果你发现并没有，可以使用 
 
     [updates_testing-x86_64-debuginfo]
     name=Mageia $releasever - x86_64 - Test Updates - Debug
-    baseurl=https://mirrors.ustc.edu.cn/mageia/distrib/$releasever/x86_64/media/debug/core/updates_testing/
+    baseurl=https://mirror.nyist.edu.cn/mageia/distrib/$releasever/x86_64/media/debug/core/updates_testing/
     #metalink=https://mirrors.mageia.org/metalink?distrib=mageia-$releasever&arch=x86_64&section=core&repo=updates_testing&debug=true
     mirrorlist=https://www.mageia.org/mirrorlist/?release=$releasever&arch=x86_64&section=core&repo=updates_testing&debug=1
     gpgcheck=1
@@ -182,7 +182,7 @@ dnf 在默认情况下已经被预装，如果你发现并没有，可以使用 
 
     [backports-x86_64-debuginfo]
     name=Mageia $releasever - x86_64 - Backports - Debug
-    baseurl=https://mirrors.ustc.edu.cn/mageia/distrib/$releasever/x86_64/media/debug/core/backports/
+    baseurl=https://mirror.nyist.edu.cn/mageia/distrib/$releasever/x86_64/media/debug/core/backports/
     #metalink=https://mirrors.mageia.org/metalink?distrib=mageia-$releasever&arch=x86_64&section=core&repo=backports&debug=true
     mirrorlist=https://www.mageia.org/mirrorlist/?release=$releasever&arch=x86_64&section=core&repo=backports&debug=1
     gpgcheck=1
@@ -192,7 +192,7 @@ dnf 在默认情况下已经被预装，如果你发现并没有，可以使用 
 
     [backports_testing-x86_64-debuginfo]
     name=Mageia $releasever - x86_64 - Test Backports - Debug
-    baseurl=https://mirrors.ustc.edu.cn/mageia/distrib/$releasever/x86_64/media/debug/core/backports_testing/
+    baseurl=https://mirror.nyist.edu.cn/mageia/distrib/$releasever/x86_64/media/debug/core/backports_testing/
     #metalink=https://mirrors.mageia.org/metalink?distrib=mageia-$releasever&arch=x86_64&section=core&repo=backports_testing&debug=true
     mirrorlist=https://www.mageia.org/mirrorlist/?release=$releasever&arch=x86_64&section=core&repo=backports_testing&debug=1
     gpgcheck=1

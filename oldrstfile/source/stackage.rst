@@ -5,7 +5,7 @@ Stackage 源使用帮助
 地址
 ====
 
-https://mirrors.ustc.edu.cn/stackage/
+https://mirror.nyist.edu.cn/stackage/
 
 说明
 ====
@@ -24,27 +24,27 @@ Stackage 镜像
 ::
     
     setup-info-locations:
-      - http://mirrors.ustc.edu.cn/stackage/stack-setup.yaml
+      - https://mirror.nyist.edu.cn/stackage/stack-setup.yaml
     urls:
-      latest-snapshot: http://mirrors.ustc.edu.cn/stackage/snapshots.json
+      latest-snapshot: https://mirror.nyist.edu.cn/stackage/snapshots.json
 
 < 2.3, >= v2.1.1:
 
 ::
     
-    setup-info: "http://mirrors.ustc.edu.cn/stackage/stack-setup.yaml"
+    setup-info: "https://mirror.nyist.edu.cn/stackage/stack-setup.yaml"
     urls:
-      latest-snapshot: http://mirrors.ustc.edu.cn/stackage/snapshots.json
+      latest-snapshot: https://mirror.nyist.edu.cn/stackage/snapshots.json
 
 < v2.1.1:
 
 ::
     
-    setup-info: "http://mirrors.ustc.edu.cn/stackage/stack-setup.yaml"
+    setup-info: "https://mirror.nyist.edu.cn/stackage/stack-setup.yaml"
     urls:
-      latest-snapshot: http://mirrors.ustc.edu.cn/stackage/snapshots.json
-      lts-build-plans: http://mirrors.ustc.edu.cn/stackage/lts-haskell/
-      nightly-build-plans: http://mirrors.ustc.edu.cn/stackage/stackage-nightly/
+      latest-snapshot: https://mirror.nyist.edu.cn/stackage/snapshots.json
+      lts-build-plans: https://mirror.nyist.edu.cn/stackage/lts-haskell/
+      nightly-build-plans: https://mirror.nyist.edu.cn/stackage/stackage-nightly/
 
 
 相关链接

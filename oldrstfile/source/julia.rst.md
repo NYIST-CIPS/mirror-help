@@ -5,7 +5,7 @@ title: Julia 镜像使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/julia/>
+<https://mirror.nyist.edu.cn/julia/>
 
 说明
 ====
@@ -15,7 +15,7 @@ title: Julia 镜像使用帮助
 以及装包时所涉及的源代码和二进制依赖。
 
 关于 Julia 二进制程序的镜像，请在 [Julia
-Releases](https://mirrors.ustc.edu.cn/julia-releases/) 下载。
+Releases](https://mirror.nyist.edu.cn/julia-releases/) 下载。
 
 注：本镜像的使用需要 Julia `v1.4.0`{.sh .bash .sourceCode}
 或更新的版本。
@@ -38,7 +38,7 @@ WORD_SIZE: 64
 LIBM: libopenlibm
 LLVM: libLLVM-8.0.1 (ORCJIT, broadwell)
 Environment:
-JULIA_PKG_SERVER = https://mirrors.ustc.edu.cn/julia
+JULIA_PKG_SERVER = https://mirror.nyist.edu.cn/julia
 ```
 
 若不设置该环境变量则默认使用官方服务器 `https://pkg.julialang.org`{.sh
@@ -50,10 +50,10 @@ JULIA_PKG_SERVER = https://mirrors.ustc.edu.cn/julia
 不同系统和命令行下设置环境变量的方式各不相同，在命令行下可以通过以下方式来临时修改环境变量
 
 -   Linux Bash:
-    `export JULIA_PKG_SERVER=https://mirrors.ustc.edu.cn/julia`{.sh
+    `export JULIA_PKG_SERVER=https://mirror.nyist.edu.cn/julia`{.sh
     .bash .sourceCode}
 -   Windows Powershell:
-    `$env:JULIA_PKG_SERVER = 'https://mirrors.ustc.edu.cn/julia'`{.sh
+    `$env:JULIA_PKG_SERVER = 'https://mirror.nyist.edu.cn/julia'`{.sh
     .bash .sourceCode}
 
 也可以利用 JuliaCN 社区维护的中文本地化工具包
@@ -73,7 +73,7 @@ JuliaZH.mirrors # 查询记录的上游信息
 
 ``` {.sourceCode .text}
 # ~/.bashrc
-export JULIA_PKG_SERVER=https://mirrors.ustc.edu.cn/julia
+export JULIA_PKG_SERVER=https://mirror.nyist.edu.cn/julia
 ```
 
 此外， 这里再提供一种针对 Julia 的全平台通用的方式：
@@ -83,7 +83,7 @@ Julia 时都会执行的命令， 编辑该文件， 添加以下内容即可：
 
 ``` {.sourceCode .text}
 # ~/.julia/config/startup.jl
-ENV["JULIA_PKG_SERVER"] = "https://mirrors.ustc.edu.cn/julia"
+ENV["JULIA_PKG_SERVER"] = "https://mirror.nyist.edu.cn/julia"
 ```
 
 也可以选择使用 `JuliaZH`{.sh .bash .sourceCode} 来一键修改/创建
@@ -98,7 +98,7 @@ julia> JuliaZH.generate_startup("default")
 julia> JuliaZH.generate_startup("USTC")
 ┌ Info: 更新 PkgServer
 │   原服务器地址 = "https://pkg.julialang.org"
-│   新服务器地址 = "https://mirrors.USTC.edu.cn/julia"
+│   新服务器地址 = "https://mirror.nyist.edu.cn/julia"
 └   配置文件 = "/root/.julia/config"
 ```
 

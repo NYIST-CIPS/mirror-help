@@ -17,7 +17,7 @@ rsync 同步方式
 同步专用域名
 -------------
 
-如需使用 ``rsync`` 协议访问科大开源镜像站，建议使用 ``rsync`` 专用的域名： ``rsync.mirrors.ustc.edu.cn`` 。
+如需使用 ``rsync`` 协议访问科大开源镜像站，建议使用 ``rsync`` 专用的域名： ``rsync.mirror.nyist.edu.cn`` 。
 
 .. warning::
     使用非标准域名 ``rsync`` 访问站点的用户可能无法进行同步。
@@ -27,14 +27,14 @@ rsync 同步方式
 
 目前，科大镜像站所有仓库的同步都必须添加 ``/repo/`` 的前缀来进行访问。
 如， ``ubuntu`` 仓库的实际路径为
-``rsync://rsync.mirrors.ustc.edu.cn/repo/ubuntu/`` ，而非
-``rsync://rsync.mirrors.ustc.edu.cn/ubuntu`` 。
+``rsync://rsync.mirror.nyist.edu.cn/repo/ubuntu/`` ，而非
+``rsync://rsync.mirror.nyist.edu.cn/ubuntu`` 。
 
 .. tip::
     我们强烈推荐用户在实际进行 ``rsync`` 同步之前先使用 ``rsync``
     工具列出目录内容以实际观察目录结构。
     例如，用户可以使用如下命令列出 ``ubuntu`` 仓库根目录的具体内容：
-    ``rsync rsync://rsync.mirrors.ustc.edu.cn/repo/ubuntu/`` 。
+    ``rsync rsync://rsync.mirror.nyist.edu.cn/repo/ubuntu/`` 。
 
 可同步内容
 ------------
@@ -43,7 +43,7 @@ rsync 同步方式
 
 .. tip::
    如需获取完整的可同步仓库列表，请使用 rsync 列出 ``/repo/`` 路径下
-   的目录列表： ``rsync rsync://rsync.mirrors.ustc.edu.cn/repo/`` 。
+   的目录列表： ``rsync rsync://rsync.mirror.nyist.edu.cn/repo/`` 。
 
 注意事项
 ----------

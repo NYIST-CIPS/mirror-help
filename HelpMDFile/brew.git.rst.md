@@ -5,7 +5,7 @@ title: Homebrew 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/brew.git/>
+<https://mirror.nyist.edu.cn/brew.git/>
 
 说明
 ====
@@ -18,7 +18,7 @@ Homebrew 源代码仓库
 替换USTC镜像：
 
     cd "$(brew --repo)"
-    git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+    git remote set-url origin https://mirror.nyist.edu.cn/brew.git
 
 重置为官方地址：
 
@@ -37,8 +37,8 @@ Homebrew 源代码仓库
 
 官方主页
 
-:   <http://brew.sh/>
+:   <https://brew.sh/>
 
 brew 文档
 
-:   <http://docs.brew.sh/>
+:   <https://docs.brew.sh/>

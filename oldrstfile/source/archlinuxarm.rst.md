@@ -5,7 +5,7 @@ title: Arch Linux ARM 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/archlinuxarm/>
+<https://mirror.nyist.edu.cn/archlinuxarm/>
 
 说明
 ====
@@ -23,7 +23,7 @@ ARMv5, ARMv6, ARMv7, AArch64
 编辑 `/etc/pacman.d/mirrorlist`{.interpreted-text role="file"}
 ，在文件的最顶端添加
 
-    Server = https://mirrors.ustc.edu.cn/archlinuxarm/$arch/$repo
+    Server = https://mirror.nyist.edu.cn/archlinuxarm/$arch/$repo
 
 相关链接
 ========

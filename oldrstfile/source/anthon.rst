@@ -5,7 +5,7 @@ AOSC OS 源使用帮助
 地址
 ====
 
-https://mirrors.ustc.edu.cn/anthon
+https://mirror.nyist.edu.cn/anthon
 
 说明
 ====

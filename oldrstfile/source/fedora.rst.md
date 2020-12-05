@@ -5,7 +5,7 @@ title: Fedora 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/fedora/>
+<https://mirror.nyist.edu.cn/fedora/>
 
 说明
 ====
@@ -37,7 +37,7 @@ Warning
 下的文件
 
     sudo sed -e 's|^metalink=|#metalink=|g' \
-             -e 's|^#baseurl=http://download.fedoraproject.org/pub/fedora/linux|baseurl=https://mirrors.ustc.edu.cn/fedora|g' \
+             -e 's|^#baseurl=https://download.fedoraproject.org/pub/fedora/linux|baseurl=https://mirror.nyist.edu.cn/fedora|g' \
              -i.bak \
              /etc/yum.repos.d/fedora.repo \
              /etc/yum.repos.d/fedora-modular.repo \

@@ -5,7 +5,7 @@ Termux 源使用帮助
 地址
 ====
 
-https://mirrors.ustc.edu.cn/termux
+https://mirror.nyist.edu.cn/termux
 
 说明
 ====
@@ -24,13 +24,13 @@ Termux APT 源镜像
 
 ::
 
-    deb https://mirrors.ustc.edu.cn/termux stable main
+    deb https://mirror.nyist.edu.cn/termux stable main
 
 你也可以使用 ``sed`` 命令进行文本替换：
 
 ::
 
-    sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.ustc.edu.cn/termux stable main@' $PREFIX/etc/apt/sources.list
+    sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirror.nyist.edu.cn/termux stable main@' $PREFIX/etc/apt/sources.list
     pkg up
 
 注：Termux 会自动将环境变量 ``$PREFIX`` 设定为 :file:`/data/data/com.termux/files/usr`

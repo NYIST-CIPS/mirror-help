@@ -5,7 +5,7 @@ title: PackMan 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/packman/>
+<https://mirror.nyist.edu.cn/packman/>
 
 说明
 ====
@@ -23,14 +23,14 @@ openSUSE 非官方社区软件源，主要收录允许自由分发但存在专�
 
 以 openSUSE Leap 42.3 为例添加软件源：
 
-    sudo zypper ar -fcg https://mirrors.ustc.edu.cn/packman/suse/openSUSE_Leap_42.3/ USTC:42.3:PACKMAN
+    sudo zypper ar -fcg https://mirror.nyist.edu.cn/packman/suse/openSUSE_Leap_42.3/ USTC:42.3:PACKMAN
 
 相关链接
 ========
 
 官方主页
 
-:   <http://packman.links2linux.org/>
+:   <https://packman.links2linux.org/>
 
 中文 Wiki 页
 

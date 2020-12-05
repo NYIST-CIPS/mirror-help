@@ -5,14 +5,14 @@ title: 'Debian-cdimage 源使用帮助'
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/debian-cdimage/>
+<https://mirror.nyist.edu.cn/debian-cdimage/>
 
 说明
 ====
 
 这是除了 `debian-cd` 之外 Debian
 的另一部分补充用官方和准官方安装镜像的副本。 其内容来自
-<http://cdimage.debian.org/cdimage/> 但并未进行完整的同步，
+<https://cdimage.debian.org/cdimage/> 但并未进行完整的同步，
 保留了较实用的一部分内容。
 
 该副本每周同步一次。

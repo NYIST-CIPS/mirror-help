@@ -5,7 +5,7 @@ title: Debian 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/debian/>
+<https://mirror.nyist.edu.cn/debian/>
 
 说明
 ====
@@ -37,23 +37,23 @@ Warning
 :::
 
 一般情况下，将 `/etc/apt/sources.list`{.interpreted-text role="file"}
-文件中 Debian 默认的源地址 `http://deb.debian.org/` 替换为
-`http://mirrors.ustc.edu.cn` 即可。
+文件中 Debian 默认的源地址 `https://deb.debian.org/` 替换为
+`https://mirror.nyist.edu.cn` 即可。
 
 可以使用如下命令：
 
-    sudo sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+    sudo sed -i 's/deb.debian.org/mirror.nyist.edu.cn/g' /etc/apt/sources.list
 
 当然也可以直接编辑 `/etc/apt/sources.list`{.interpreted-text
 role="file"} 文件（需要使用 sudo）。以下是 Debian Stable 参考配置内容：
 
-    deb http://mirrors.ustc.edu.cn/debian stable main contrib non-free
-    # deb-src http://mirrors.ustc.edu.cn/debian stable main contrib non-free
-    deb http://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free
-    # deb-src http://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free
+    deb https://mirror.nyist.edu.cn/debian stable main contrib non-free
+    # deb-src https://mirror.nyist.edu.cn/debian stable main contrib non-free
+    deb https://mirror.nyist.edu.cn/debian stable-updates main contrib non-free
+    # deb-src https://mirror.nyist.edu.cn/debian stable-updates main contrib non-free
 
-    # deb http://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free
-    # deb-src http://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free
+    # deb https://mirror.nyist.edu.cn/debian stable-proposed-updates main contrib non-free
+    # deb-src https://mirror.nyist.edu.cn/debian stable-proposed-updates main contrib non-free
 
 同时你也可能需要更改 Debian Security 源，请参考
 `debian-security`{.interpreted-text role="doc"}
@@ -71,7 +71,7 @@ Tip
 :::
 
 另外，也可以使用 snullp 大叔开发的
-[配置生成器](https://mirrors.ustc.edu.cn/repogen) 。
+[配置生成器](https://mirror.nyist.edu.cn/repogen) 。
 
 相关链接
 ========

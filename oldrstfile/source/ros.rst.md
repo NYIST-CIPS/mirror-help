@@ -5,7 +5,7 @@ title: ROS 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/ros/>
+<https://mirror.nyist.edu.cn/ros/>
 
 说明
 ====
@@ -20,10 +20,10 @@ Ubuntu, Debian
 
 1.  将软件源添加至系统:
 
-        sudo sh -c 'echo "deb https://mirrors.ustc.edu.cn/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+        sudo sh -c 'echo "deb https://mirror.nyist.edu.cn/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
-如果 IPv6 地址无效导致无法刷新软件源信息，将 `mirrors.ustc.edu.cn` 改成
-`ipv4.mirrors.ustc.edu.cn` 以强制使用 IPv4。
+如果 IPv6 地址无效导致无法刷新软件源信息，将 `mirror.nyist.edu.cn` 改成
+`ipv4.mirror.nyist.edu.cn` 以强制使用 IPv4。
 
 2.  导入key:
 
@@ -36,4 +36,4 @@ Ubuntu, Debian
 
 项目主页
 
-:   <http://www.ros.org/>
+:   <https://www.ros.org/>

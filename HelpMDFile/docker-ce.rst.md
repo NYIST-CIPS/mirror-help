@@ -5,7 +5,7 @@ title: Docker CE 源使用帮助
 地址
 ====
 
-<https://mirrors.ustc.edu.cn/docker-ce/>
+<https://mirror.nyist.edu.cn/docker-ce/>
 
 说明
 ====
@@ -37,13 +37,13 @@ Docker CE 仓库镜像
 ，选择你对应的系统。 以 Ubuntu 为例，参考 [官方 Ubuntu 安装 Docker CE
 手册](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
 进行安装。 在阅读官方安装手册时，只要把 `download.docker.com` 地址换成
-`mirrors.ustc.edu.cn/docker-ce` 即可。
+`mirror.nyist.edu.cn/docker-ce` 即可。
 
 [CentOS](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)、
 [Fedora](https://docs.docker.com/engine/installation/linux/docker-ce/fedora/)
 等用户在下载 `docker-ce.repo`{.interpreted-text role="file"} 文件后，
 还需要将该文件中的 `download.docker.com` 地址换成
-`mirrors.ustc.edu.cn/docker-ce`。
+`mirror.nyist.edu.cn/docker-ce`。
 
 ::: {.tip}
 ::: {.admonition-title}
