@@ -29,7 +29,7 @@ i686, x86\_64
     sudo pacman -Syy
 
 国内用户，推荐另外使用 Arch Linux CN 的源，请参考
-`archlinuxcn`{.interpreted-text role="doc"}
+`archlinuxcn`
 
 相关链接
 ========
