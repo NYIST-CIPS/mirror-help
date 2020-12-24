@@ -10,28 +10,35 @@ title: Ubuntu 源使用帮助
 说明
 ====
 
-Ubuntu 软件源
+Ubuntu的开发由英国Canonical有限公司主导，该公司由南非企业家Mark Shuttleworth创立。Canonical通过销售与Ubuntu相关的技术支持和其他服务来产生收益。Ubuntu项目公开承诺开源软件开发的原则；鼓励人们使用自由软件，研究它的运作原理，改进和分发。
+
+Ubuntu是著名的Linux发行版之一，它也是目前最多用户的Linux版本。
 
 收录架构
 ========
 
-AMD64 (x86\_64), Intel x86
+32,64Bit x86
 
-其他架构请参考 `ubuntu-ports`{.interpreted-text role="doc"}
+其他架构请使用 
+- [ubuntu-ports(暂未收录)](https://mirror.nyist.edu.cn/ubuntu-ports)
+
+- [ubuntu-ports(tuna)](https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/)
 
 收录版本
 ========
 
-所有 Ubuntu 当前支持的版本，包括开发版，具体版本见
-<https://wiki.ubuntu.com/Releases>
-
-对于 Ubuntu 不再支持的版本，请参考
-`ubuntu-old-releases`{.interpreted-text role="doc"}
+- 12.04 LTS   
+- 14.04 LTS   
+- 16.04 LTS   
+- 18.04 LTS   
+- 20.04 LTS   
+- 19.10   
+- 20.10
 
 使用说明
 ========
 
-图形界面配置（新手推荐）
+图形界面配置（暂不支持）
 ------------------------
 
 依次打开：系统设置，软件和更新。在 `下载自` 中选择 `其他站点`
@@ -44,109 +51,150 @@ AMD64 (x86\_64), Intel x86
 手动更改配置文件
 ----------------
 
-::: {.warning}
-::: {.admonition-title}
-Warning
-:::
+**操作前请做好相应备份！**
 
-操作前请做好相应备份
-:::
+Ubuntu 的软件源配置文件是 `/etc/apt/sources.list`。将系统自带的该文件做个备份，将该文件替换为下面内容即可。
 
-一般情况下，将 `/etc/apt/sources.list`{.interpreted-text role="file"}
-文件中 Ubuntu 默认的源地址 `https://archive.ubuntu.com/` 替换为
-`https://mirror.nyist.edu.cn` 即可。
+<details>
+<summary>20.04 LTS</summary>
 
-可以使用如下命令：
+```
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirror.nyist.edu.cn/ubuntu/ focal main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ focal main restricted universe multiverse
+deb https://mirror.nyist.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+deb https://mirror.nyist.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+deb https://mirror.nyist.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ focal-security main restricted universe multiverse
 
-    sudo sed -i 's/archive.ubuntu.com/mirror.nyist.edu.cn/g' /etc/apt/sources.list
+# 预发布软件源，不建议启用
+# deb https://mirror.nyist.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+```
+</details>
 
-::: {.tip}
-::: {.admonition-title}
-Tip
-:::
+<details>
+<summary>18.04 LTS</summary>
 
-Ubuntu 图形安装器会根据用户设定的时区推断
-locale，这导致默认的源地址通常不是 `https://archive.ubuntu.com/` ， 而是
-`https://<country-code>.archive.ubuntu.com/ubuntu/` ，如
-`https://cn.archive.ubuntu.com/ubuntu/` ，
-此时只需将上面的命令进行相应的替换即可，即
-`sudo sed -i 's/cn.archive.ubuntu.com/mirror.nyist.edu.cn/g' /etc/apt/sources.list`
-。
-:::
+```
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirror.nyist.edu.cn/ubuntu/ bionic main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb https://mirror.nyist.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb https://mirror.nyist.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb https://mirror.nyist.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
 
-当然也可以直接编辑 `/etc/apt/sources.list`{.interpreted-text
-role="file"} 文件（需要使用 sudo）。以下是 Ubuntu 16.04 参考配置内容：
+# 预发布软件源，不建议启用
+# deb https://mirror.nyist.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+```
+</details>
 
-    # 默认注释了源码仓库，如有需要可自行取消注释
-    deb https://mirror.nyist.edu.cn/ubuntu/ xenial main restricted universe multiverse
-    # deb-src https://mirror.nyist.edu.cn/ubuntu/ xenial main restricted universe multiverse
-    deb https://mirror.nyist.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
-    # deb-src https://mirror.nyist.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
-    deb https://mirror.nyist.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
-    # deb-src https://mirror.nyist.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
-    deb https://mirror.nyist.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
-    # deb-src https://mirror.nyist.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
+<details>
+<summary>16.04 LTS</summary>
 
-    # 预发布软件源，不建议启用
-    # deb https://mirror.nyist.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse
-    # deb-src https://mirror.nyist.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse
+```
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirror.nyist.edu.cn/ubuntu/ xenial main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ xenial main restricted universe multiverse
+deb https://mirror.nyist.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
+deb https://mirror.nyist.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
+deb https://mirror.nyist.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
 
-更改完 `sources.list`{.interpreted-text role="file"} 文件后请运行
-`sudo apt-get update` 更新索引以生效。
+# 预发布软件源，不建议启用
+# deb https://mirror.nyist.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse
+```
+</details>
 
-::: {.tip}
-::: {.admonition-title}
-Tip
-:::
+<details>
+<summary>14.04 LTS</summary>
 
-如要用于其他版本，把 xenial 换成其他版本代号即可:
-20.04：`focal`；18.04：`bionic`；17.10：`artful`；16.04：`xenial`；14.04：`trusty`。
-:::
+```
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirror.nyist.edu.cn/ubuntu/ trusty main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ trusty main restricted universe multiverse
+deb https://mirror.nyist.edu.cn/ubuntu/ trusty-updates main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ trusty-updates main restricted universe multiverse
+deb https://mirror.nyist.edu.cn/ubuntu/ trusty-backports main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ trusty-backports main restricted universe multiverse
+deb https://mirror.nyist.edu.cn/ubuntu/ trusty-security main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ trusty-security main restricted universe multiverse
 
-::: {.tip}
-::: {.admonition-title}
-Tip
-:::
+# 预发布软件源，不建议启用
+# deb https://mirror.nyist.edu.cn/ubuntu/ trusty-proposed main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ trusty-proposed main restricted universe multiverse
+```
+</details>
 
-使用 HTTPS 可以有效避免国内运营商的缓存劫持。
-:::
+<details>
+<summary>20.10</summary>
 
+```
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirror.nyist.edu.cn/ubuntu/ groovy main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ groovy main restricted universe multiverse
+deb https://mirror.nyist.edu.cn/ubuntu/ groovy-updates main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ groovy-updates main restricted universe multiverse
+deb https://mirror.nyist.edu.cn/ubuntu/ groovy-backports main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ groovy-backports main restricted universe multiverse
+deb https://mirror.nyist.edu.cn/ubuntu/ groovy-security main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ groovy-security main restricted universe multiverse
+
+# 预发布软件源，不建议启用
+# deb https://mirror.nyist.edu.cn/ubuntu/ groovy-proposed main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ groovy-proposed main restricted universe multiverse
+```
+</details>
+
+<details>
+<summary>19.10</summary>
+
+```
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirror.nyist.edu.cn/ubuntu/ eoan main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ eoan main restricted universe multiverse
+deb https://mirror.nyist.edu.cn/ubuntu/ eoan-updates main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ eoan-updates main restricted universe multiverse
+deb https://mirror.nyist.edu.cn/ubuntu/ eoan-backports main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ eoan-backports main restricted universe multiverse
+deb https://mirror.nyist.edu.cn/ubuntu/ eoan-security main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ eoan-security main restricted universe multiverse
+
+# 预发布软件源，不建议启用
+# deb https://mirror.nyist.edu.cn/ubuntu/ eoan-proposed main restricted universe multiverse
+# deb-src https://mirror.nyist.edu.cn/ubuntu/ eoan-proposed main restricted universe multiverse
+```
+</details>
 另外，也可以使用 snullp 大叔开发的
 [配置生成器](https://mirror.nyist.edu.cn/repogen) 。
 
 镜像下载
 --------
 
-如果需要下载 Ubuntu 的 ISO 镜像以便安装，请参考
-`ubuntu-releases`{.interpreted-text role="doc"}
+如果需要下载 Ubuntu 的 ISO 镜像以便安装，请参考 `ubuntu-releases`(暂未提供)
 
 相关链接
 ========
 
-官方主页
+官方主页:   <https://www.ubuntu.com/>
 
-:   <https://www.ubuntu.com/>
+文档:   <https://help.ubuntu.com/>
 
-文档
+Wiki:   <https://wiki.ubuntu.com/>
 
-:   <https://help.ubuntu.com/>
+邮件列表:   <https://community.ubuntu.com/contribute/support/mailinglists/>
 
-Wiki
+提问:   <https://askubuntu.com/>
 
-:   <https://wiki.ubuntu.com/>
+论坛:   <https://ubuntuforums.org/>
 
-邮件列表
-
-:   <https://community.ubuntu.com/contribute/support/mailinglists/>
-
-提问
-
-:   <https://askubuntu.com/>
-
-论坛
-
-:   <https://ubuntuforums.org/>
-
-中文论坛
-
-:   <https://forum.ubuntu.org.cn/>
+中文论坛:   <https://forum.ubuntu.org.cn/>
