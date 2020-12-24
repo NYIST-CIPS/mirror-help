@@ -27,12 +27,12 @@
     ],
     "pluginsConfig": {
         "github": {
-            "url": "https://github.com/DefiedParty"
+            "url": "https://github.com/NYIST-OSUG"
         },
         "github-buttons": {
             "buttons": [{
-                "user": "DefiedParty",
-                "repo": "NYIST-Mirror-Help-GitBook",
+                "user": "NYIST-OSUG",
+                "repo": "mirror-help",
                 "type": "star",
                 "size": "small",
                 "count": true

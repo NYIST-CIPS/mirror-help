@@ -4,4 +4,4 @@
 
 访问 [南阳理工学院开源镜像站](https://mirror.nyist.edu.cn)
 
-基于LUG@USTC帮助文档修改
+基于LUG@USTC及TUNA帮助文档修改
