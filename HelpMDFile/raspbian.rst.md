@@ -38,16 +38,16 @@ Raspbian 并非由树莓派的开发与维护机构 The Raspberry Pi Foundation 
 
 编辑 `/etc/apt/sources.list` 文件，删除原文件所有内容，用以下内容取代：
 
-```
+<pre><code>
 deb https://mirror.nyist.edu.cn/raspbian/raspbian/ wheezy main non-free contrib rpi
 deb-src https://mirror.nyist.edu.cn/raspbian/raspbian/ wheezy main non-free contrib rpi
-```
+</code></pre>
 
 编辑 `/etc/apt/sources.list.d/raspi.list` 文件，删除原文件所有内容，用以下内容取代：
 
-```
+<pre><code>
 deb http://mirror.nyist.edu.cn/raspberrypi/ wheezy main ui
-```
+</code></pre>
 </details>
 
 <details>
@@ -55,16 +55,16 @@ deb http://mirror.nyist.edu.cn/raspberrypi/ wheezy main ui
 
 编辑 `/etc/apt/sources.list` 文件，删除原文件所有内容，用以下内容取代：
 
-```
+<pre><code>
 deb https://mirror.nyist.edu.cn/raspbian/raspbian/ jessie main non-free contrib rpi
 deb-src https://mirror.nyist.edu.cn/raspbian/raspbian/ jessie main non-free contrib rpi
-```
+</code></pre>
 
 编辑 `/etc/apt/sources.list.d/raspi.list` 文件，删除原文件所有内容，用以下内容取代：
 
-```
+<pre><code>
 deb https://mirror.nyist.edu.cn/raspberrypi/ jessie main ui
-```
+</code></pre>
 </details>
 
 <details>
@@ -72,30 +72,30 @@ deb https://mirror.nyist.edu.cn/raspberrypi/ jessie main ui
 
 编辑 `/etc/apt/sources.list` 文件，删除原文件所有内容，用以下内容取代：
 
-```
+<pre><code>
 deb https://mirror.nyist.edu.cn/raspbian/raspbian/ stretch main non-free contrib rpi
 deb-src https://mirror.nyist.edu.cn/raspbian/raspbian/ stretch main non-free contrib rpi
-```
+</code></pre>
 
 编辑 `/etc/apt/sources.list.d/raspi.list` 文件，删除原文件所有内容，用以下内容取代：
-```
+<pre><code>
 deb https://mirror.nyist.edu.cn/raspberrypi/ stretch main ui
-```
+</code></pre>
 </details>
 
 <details>
 <summary>Debian 10 (buster)</summary>
 
 编辑 `/etc/apt/sources.list` 文件，删除原文件所有内容，用以下内容取代：
-```
+<pre><code>
 deb https://mirror.nyist.edu.cn/raspbian/raspbian/ buster main non-free contrib rpi
 deb-src https://mirror.nyist.edu.cn/raspbian/raspbian/ buster main non-free contrib rpi
-```
+</code></pre>
 编辑 `/etc/apt/sources.list.d/raspi.list` 文件，删除原文件所有内容，用以下内容取代：
 
-```
+<pre><code>
 deb https://mirror.nyist.edu.cn/raspberrypi/ buster main ui
-```
+</code></pre>
 </details>
 
 相关链接

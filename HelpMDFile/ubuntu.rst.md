@@ -57,8 +57,7 @@ Ubuntu 的软件源配置文件是 `/etc/apt/sources.list`。将系统自带的�
 
 <details>
 <summary>20.04 LTS</summary>
-
-```
+<pre><code>
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb https://mirror.nyist.edu.cn/ubuntu/ focal main restricted universe multiverse
 # deb-src https://mirror.nyist.edu.cn/ubuntu/ focal main restricted universe multiverse
@@ -72,13 +71,12 @@ deb https://mirror.nyist.edu.cn/ubuntu/ focal-security main restricted universe 
 # 预发布软件源，不建议启用
 # deb https://mirror.nyist.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
 # deb-src https://mirror.nyist.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
-```
+</code></pre>
 </details>
 
 <details>
 <summary>18.04 LTS</summary>
-
-```
+<pre><code>
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb https://mirror.nyist.edu.cn/ubuntu/ bionic main restricted universe multiverse
 # deb-src https://mirror.nyist.edu.cn/ubuntu/ bionic main restricted universe multiverse
@@ -92,13 +90,12 @@ deb https://mirror.nyist.edu.cn/ubuntu/ bionic-security main restricted universe
 # 预发布软件源，不建议启用
 # deb https://mirror.nyist.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
 # deb-src https://mirror.nyist.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
-```
+</pre></code>
 </details>
 
 <details>
 <summary>16.04 LTS</summary>
-
-```
+<pre><code>
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb https://mirror.nyist.edu.cn/ubuntu/ xenial main restricted universe multiverse
 # deb-src https://mirror.nyist.edu.cn/ubuntu/ xenial main restricted universe multiverse
@@ -112,13 +109,12 @@ deb https://mirror.nyist.edu.cn/ubuntu/ xenial-security main restricted universe
 # 预发布软件源，不建议启用
 # deb https://mirror.nyist.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse
 # deb-src https://mirror.nyist.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse
-```
+</pre></code>
 </details>
 
 <details>
 <summary>14.04 LTS</summary>
-
-```
+<pre><code>
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb https://mirror.nyist.edu.cn/ubuntu/ trusty main restricted universe multiverse
 # deb-src https://mirror.nyist.edu.cn/ubuntu/ trusty main restricted universe multiverse
@@ -132,13 +128,12 @@ deb https://mirror.nyist.edu.cn/ubuntu/ trusty-security main restricted universe
 # 预发布软件源，不建议启用
 # deb https://mirror.nyist.edu.cn/ubuntu/ trusty-proposed main restricted universe multiverse
 # deb-src https://mirror.nyist.edu.cn/ubuntu/ trusty-proposed main restricted universe multiverse
-```
+</code></pre>
 </details>
 
 <details>
 <summary>20.10</summary>
-
-```
+<pre><code>
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb https://mirror.nyist.edu.cn/ubuntu/ groovy main restricted universe multiverse
 # deb-src https://mirror.nyist.edu.cn/ubuntu/ groovy main restricted universe multiverse
@@ -152,13 +147,12 @@ deb https://mirror.nyist.edu.cn/ubuntu/ groovy-security main restricted universe
 # 预发布软件源，不建议启用
 # deb https://mirror.nyist.edu.cn/ubuntu/ groovy-proposed main restricted universe multiverse
 # deb-src https://mirror.nyist.edu.cn/ubuntu/ groovy-proposed main restricted universe multiverse
-```
+</code></pre>
 </details>
 
 <details>
 <summary>19.10</summary>
-
-```
+<pre><code>
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb https://mirror.nyist.edu.cn/ubuntu/ eoan main restricted universe multiverse
 # deb-src https://mirror.nyist.edu.cn/ubuntu/ eoan main restricted universe multiverse
@@ -172,10 +166,8 @@ deb https://mirror.nyist.edu.cn/ubuntu/ eoan-security main restricted universe m
 # 预发布软件源，不建议启用
 # deb https://mirror.nyist.edu.cn/ubuntu/ eoan-proposed main restricted universe multiverse
 # deb-src https://mirror.nyist.edu.cn/ubuntu/ eoan-proposed main restricted universe multiverse
-```
+</code></pre>
 </details>
-另外，也可以使用 snullp 大叔开发的
-[配置生成器](https://mirror.nyist.edu.cn/repogen) 。
 
 镜像下载
 --------
