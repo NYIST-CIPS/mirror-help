@@ -30,7 +30,7 @@ function precompile(input, opts) {
     // * env: the Environment to use (gets extensions and async filters from it)
     // * include: which file/folders to include (folders are auto-included, files are auto-excluded)
     // * exclude: which file/folders to exclude (folders are auto-included, files are auto-excluded)
-    // * wrapper: function(name, template, opts) {...}
+    // * wrapper: function(templates, opts) {...}
     //       Customize the output format to store the compiled template.
     //       By default, templates are stored in a global variable used by the runtime.
     //       A custom loader will be necessary to load your custom wrapper.
@@ -116,6 +116,8 @@ function _precompile(str, name, env) {
     var asyncFilters = env.asyncFilters;
     var extensions = env.extensionsList;
     var template;
+
+    name = name.replace(/\\/g, '/');
 
     try {
         template = compiler.compile(str,
