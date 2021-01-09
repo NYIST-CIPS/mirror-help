@@ -28,15 +28,11 @@ Debian Old Stable, Stable, Testing, Unstable(sid)
 使用说明
 ========
 
-::: {.warning}
-::: {.admonition-title}
-Warning
-:::
 
-操作前请做好相应备份
-:::
+**操作前请做好相应备份**
 
-一般情况下，将 `/etc/apt/sources.list`{.interpreted-text role="file"}
+
+一般情况下，将 `/etc/apt/sources.list`
 文件中 Debian 默认的源地址 `https://deb.debian.org/` 替换为
 `https://mirror.nyist.edu.cn` 即可。
 
@@ -44,8 +40,7 @@ Warning
 
     sudo sed -i 's/deb.debian.org/mirror.nyist.edu.cn/g' /etc/apt/sources.list
 
-当然也可以直接编辑 `/etc/apt/sources.list`{.interpreted-text
-role="file"} 文件（需要使用 sudo）。以下是 Debian Stable 参考配置内容：
+当然也可以直接编辑 `/etc/apt/sources.list`文件（需要使用 sudo）。以下是 Debian Stable 参考配置内容：
 
     deb https://mirror.nyist.edu.cn/debian stable main contrib non-free
     # deb-src https://mirror.nyist.edu.cn/debian stable main contrib non-free
@@ -56,42 +51,20 @@ role="file"} 文件（需要使用 sudo）。以下是 Debian Stable 参考配�
     # deb-src https://mirror.nyist.edu.cn/debian stable-proposed-updates main contrib non-free
 
 同时你也可能需要更改 Debian Security 源，请参考
-`debian-security`{.interpreted-text role="doc"}
+`debian-security` [（TUNA）](https://mirrors.tuna.tsinghua.edu.cn/debian-security/)
 
-更改完 `sources.list`{.interpreted-text role="file"} 文件后请运行
+更改完 `sources.list` 文件后请运行
 `sudo apt-get update` 更新索引以生效。
-
-::: {.tip}
-::: {.admonition-title}
-Tip
-:::
-
-使用 HTTPS 可以有效避免国内运营商的缓存劫持，但需要事先安装
-`apt-transport-https` (Debian Buster 及以上版本不需要)。
-:::
-
-另外，也可以使用 snullp 大叔开发的
-[配置生成器](https://mirror.nyist.edu.cn/repogen) 。
 
 相关链接
 ========
 
-官方主页
+官方主页：<https://www.debian.org/>
 
-:   <https://www.debian.org/>
+邮件列表：<https://www.debian.org/MailingLists/>
 
-邮件列表
+Wiki：<https://wiki.debian.org/>
 
-:   <https://www.debian.org/MailingLists/>
+文档：<https://www.debian.org/doc/>
 
-Wiki
-
-:   <https://wiki.debian.org/>
-
-文档
-
-:   <https://www.debian.org/doc/>
-
-镜像列表
-
-:   <https://www.debian.org/mirror/list>
+镜像列表：<https://www.debian.org/mirror/list>

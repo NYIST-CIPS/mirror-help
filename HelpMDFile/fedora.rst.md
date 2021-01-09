@@ -25,16 +25,9 @@ x86\_64
 使用说明
 ========
 
-::: {.warning}
-::: {.admonition-title}
-Warning
-:::
+**操作前请做好相应备份**
 
-操作前请做好相应备份。
-:::
-
-用以下命令替换 `/etc/yum.repos.d`{.interpreted-text role="file"}
-下的文件
+用以下命令替换 `/etc/yum.repos.d`下的文件
 
     sudo sed -e 's|^metalink=|#metalink=|g' \
              -e 's|^#baseurl=https://download.fedoraproject.org/pub/fedora/linux|baseurl=https://mirror.nyist.edu.cn/fedora|g' \
@@ -44,60 +37,21 @@ Warning
              /etc/yum.repos.d/fedora-updates.repo \
              /etc/yum.repos.d/fedora-updates-modular.repo
 
-或者直接复制以下文件：
-
-`/etc/yum.repos.d/fedora.repo`{.interpreted-text role="file"} 文件：
-
-::: {.literalinclude}
-includes/fedora.repo
-:::
-
-`/etc/yum.repos.d/fedora-updates.repo`{.interpreted-text role="file"}
-文件：
-
-::: {.literalinclude}
-includes/fedora-updates.repo
-:::
-
-`/etc/yum.repos.d/fedora-modular.repo`{.interpreted-text role="file"}
-文件：
-
-::: {.literalinclude}
-includes/fedora-modular.repo
-:::
-
-`/etc/yum.repos.d/fedora-updates-modular.repo`{.interpreted-text
-role="file"} 文件：
-
-::: {.literalinclude}
-includes/fedora-updates-modular.repo
-:::
+或直接替换所需配置源对应仓库文件 `baseurl` 项为 `https://mirror.nyist.edu.cn/fedora`
 
 最后运行 `sudo dnf makecache` 生成缓存。
 
 相关链接
 ========
 
-官方主页
+官方主页：<https://getfedora.org/>
 
-:   <https://getfedora.org/>
+邮件列表：<https://fedoraproject.org/wiki/Communicating_and_getting_help>
 
-邮件列表
+论坛：<https://forums.fedoraforum.org/>
 
-:   <https://fedoraproject.org/wiki/Communicating_and_getting_help>
+文档：<https://docs.fedoraproject.org/>
 
-论坛
+Wiki：<https://fedoraproject.org/wiki/>
 
-:   <https://forums.fedoraforum.org/>
-
-文档
-
-:   <https://docs.fedoraproject.org/>
-
-Wiki
-
-:   <https://fedoraproject.org/wiki/>
-
-镜像列表
-
-:   <https://admin.fedoraproject.org/mirrormanager>
+镜像列表：<https://admin.fedoraproject.org/mirrormanager>
